@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Hero from "../components/Hero.home";
-import Banner from "../components/Banner.home";
-import CTA from "../components/CTA.home";
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
+import CTA from "../components/CTA";
 
 export default function Home() {
   return (
