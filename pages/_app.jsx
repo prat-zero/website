@@ -1,6 +1,6 @@
 import NoSSR from "react-no-ssr";
 import scripts from "../scripts";
-import "../tailwind.css";
+import "../styles/global.css";
 
 function App({ Component, pageProps }) {
   return (
