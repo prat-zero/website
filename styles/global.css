@@ -20,3 +20,7 @@
 *:active {
   outline: none;
 }
+
+#main {
+  user-select: none;
+}

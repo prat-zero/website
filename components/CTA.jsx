@@ -4,7 +4,7 @@ function CTA() {
   const [hidden, setHidden] = useState(false);
 
   return (
-    <div className={`bg-black select-none hidden ${hidden ? "" : "lg:block"}`}>
+    <div className={`bg-black hidden ${hidden ? "" : "lg:block"}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:flex lg:items-center lg:justify-between py-10 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white">
           <span className="block">Seem interested in my work?</span>

@@ -1,10 +1,7 @@
 function Banner() {
   return (
-    <div
-      className="font-mono bg-top top-0 hidden sticky z-50 backdrop-filter backdrop-blur-lg bg-opacity-70 bg-black"
-      id="banner"
-    >
-      <div className="mx-auto max-w-7xl py-4 px-4 sm:px-6 lg:px-6">
+    <div className="bg-top hidden z-50 bg-indigo-600 shadow-2xl" id="banner">
+      <div className="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-6">
         <div className="flex flex-wrap items-center justify-between">
           <div className="flex w-0 flex-1 items-center">
             <p className="ml-3 truncate font-medium text-gray-200">
@@ -22,7 +19,7 @@ function Banner() {
                 Now playing{" "}
                 <a
                   href="https://open.spotify.com/track/3KkXRkHbMCARz0aVfEt68P?autoplay=true"
-                  className="text-indigo-500"
+                  className="text-black"
                 >
                   Sunflower
                 </a>{" "}

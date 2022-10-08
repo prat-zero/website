@@ -5,7 +5,7 @@ function Document() {
     <Html>
       <Head>
         <meta name="theme-color" content="blue" />
-        <link rel="icon" href="/image/favicon.webp" />
+        <link rel="icon" href="/image/favicon.png" />
       </Head>
       <body>
         <div id="container">

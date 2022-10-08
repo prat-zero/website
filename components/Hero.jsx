@@ -5,7 +5,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import navigation from "../urls";
 
 function Hero() {
-  const audio = new Audio(
+  /**
+   * const audio = new Audio(
     "/audio/Sunflower-(Spider-Man_-Into-the-Spider-Verse)(PagalWorld).mp3"
   );
 
@@ -29,11 +30,12 @@ function Hero() {
     const pfp = document.getElementById("profilepic");
     pfp.classList.remove("animate-spin");
   };
+   */
 
   return (
     <div
       id="hero"
-      className="relative min-h-screen overflow-hidden bg-cover bg-no-repeat bg-[url('/image/bg/mobile.jpg')] lg:bg-[url('/image/bg/desktop.webp')] bg-black select-none"
+      className={`relative min-h-screen overflow-hidden bg-cover bg-no-repeat bg-[url('/image/bg/mobile.jpg')] lg:bg-[url('/image/bg/desktop.webp')] bg-black`}
     >
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 pb-20 lg:w-full lg:max-w-2xl lg:pb-20 xl:pb-28">
@@ -45,23 +47,15 @@ function Hero() {
               >
                 <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
                   <div className="flex w-full items-center justify-between md:w-auto">
-                    <button>
+                    <a href={window.location.href}>
                       <span className="sr-only">prat-zero</span>
                       <img
                         id="profilepic"
                         alt="Pratyush's GitHub avatar"
                         className="h-12 w-auto rounded-full"
-                        onClick={() => {
-                          if (audio.paused === true) {
-                            audio.play();
-                          } else {
-                            audio.pause();
-                            audio.currentTime = 0;
-                          }
-                        }}
                         src="https://avatars.githubusercontent.com/u/113883063?v=4"
                       />
-                    </button>
+                    </a>
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="inline-flex items-center justify-center rounded-none  p-2 text-gray-300 hover:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Open main menu</span>
@@ -75,7 +69,7 @@ function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      target="_blank"
+                      target={item.name === "blog" ? "_self" : "_blank"}
                       rel="noreferrer"
                       className="font-medium text-gray-400 hover:text-white"
                     >
@@ -120,7 +114,7 @@ function Hero() {
                       <a
                         key={item.name}
                         href={item.href}
-                        target="_blank"
+                        target={item.name === "blog" ? "_self" : "_blank"}
                         rel="noreferrer"
                         className="block rounded-none px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-50 hover:text-indigo-600"
                       >
